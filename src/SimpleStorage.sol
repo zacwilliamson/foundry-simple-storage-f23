@@ -30,3 +30,5 @@ contract SimpleStorage {
         nameToFavoriteNumber[_name] = _favoriteNumber;
     }
 }
+
+// forge create SimpleStorage --rpc-url http://127.0.0.1:8545 --private-key 0`
