@@ -13,6 +13,7 @@ contract SimpleStorage {
         string name;
     }
     // uint256[] public anArray;
+
     Person[] public listOfPeople;
 
     mapping(string => uint256) public nameToFavoriteNumber;
@@ -30,8 +31,3 @@ contract SimpleStorage {
         nameToFavoriteNumber[_name] = _favoriteNumber;
     }
 }
-
-// Commands to deploy
-
-// forge create SimpleStorage --rpc-url http://127.0.0.1:8545 --private-key 000
-// forge script script/DeploySimpleStorage.s.sol --rpc-url http://127.0.0.1:8545 --broadcast --private-key
